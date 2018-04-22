@@ -97,7 +97,7 @@ public class MyLocationActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_location);
-        //setContentView(R.layout.jgps_layout_01);
+        //setContentView(R.layout.jgps_layout_03);
 
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
