@@ -2,6 +2,8 @@ package com.juyi.jgps;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -38,7 +40,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         //mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-
+        Toast toast = Toast.makeText(this, "Map Ready", Toast.LENGTH_SHORT);
+        toast.show();
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(0, 0);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
